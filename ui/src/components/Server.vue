@@ -148,7 +148,7 @@
                             />
                             <v-text-field
                                     v-model="server.postDown "
-                                    label="PostDown : script snippets which will be executed by bash after setting down the interface"
+                                    label="PostDown: script snippets which will be executed by bash after setting down the interface"
                             />
                         </v-col>
                     </div>
