@@ -318,6 +318,35 @@
                                         inset
                                         :label="'Ignore global persistent keepalive: ' + (client.ignorePersistentKeepalive ? 'Yes': 'NO')"
                                 />
+                                <v-expansion-panels variant="accordion">
+                                    <v-expansion-panel>
+                                        <v-expansion-panel-header>Interface configuration hooks</v-expansion-panel-header>
+                                        <v-expansion-panel-content>
+                                            <div class="mb-2 d-flex align-center">
+                                                <v-icon color="amber">
+                                                    mdi-alert-circle
+                                                </v-icon>
+                                                <span class="amber--text ml-2">These hooks only work on linux clients</span>
+                                            </div>
+                                            <v-text-field
+                                                    v-model="client.preUp"
+                                                    label="PreUp"
+                                            />
+                                            <v-text-field
+                                                    v-model="client.postUp"
+                                                    label="PostUp"
+                                            />
+                                            <v-text-field
+                                                    v-model="client.preDown"
+                                                    label="PreDown"
+                                            />
+                                            <v-text-field
+                                                    v-model="client.postDown "
+                                                    label="PostDown"
+                                            />
+                                        </v-expansion-panel-content>
+                                    </v-expansion-panel>
+                                </v-expansion-panels>
                             </v-form>
                         </v-col>
                     </v-row>
@@ -436,6 +465,35 @@
                                         inset
                                         :label="'Ignore global persistent keepalive: ' + (client.ignorePersistentKeepalive ? 'Yes': 'NO')"
                                 />
+                                <v-expansion-panels variant="accordion">
+                                    <v-expansion-panel>
+                                        <v-expansion-panel-header>Interface configuration hooks</v-expansion-panel-header>
+                                        <v-expansion-panel-content>
+                                            <div class="mb-2 d-flex align-center">
+                                                <v-icon color="amber">
+                                                    mdi-alert-circle
+                                                </v-icon>
+                                                <span class="amber--text ml-2">These hooks only work on linux clients</span>
+                                            </div>
+                                            <v-text-field
+                                                    v-model="client.preUp"
+                                                    label="PreUp"
+                                            />
+                                            <v-text-field
+                                                    v-model="client.postUp"
+                                                    label="PostUp"
+                                            />
+                                            <v-text-field
+                                                    v-model="client.preDown"
+                                                    label="PreDown"
+                                            />
+                                            <v-text-field
+                                                    v-model="client.postDown "
+                                                    label="PostDown"
+                                            />
+                                        </v-expansion-panel-content>
+                                    </v-expansion-panel>
+                                </v-expansion-panels>
                             </v-form>
                         </v-col>
                     </v-row>

@@ -19,6 +19,10 @@ type Client struct {
 	Tags                      []string  `json:"tags"`
 	PrivateKey                string    `json:"privateKey"`
 	PublicKey                 string    `json:"publicKey"`
+	PreUp                     string    `json:"preUp"`
+	PostUp                    string    `json:"postUp"`
+	PreDown                   string    `json:"preDown"`
+	PostDown                  string    `json:"postDown"`
 	CreatedBy                 string    `json:"createdBy"`
 	UpdatedBy                 string    `json:"updatedBy"`
 	Created                   time.Time `json:"created"`

@@ -206,6 +206,9 @@ DNS = {{ StringsJoin .Server.Dns ", " }}
 {{ if ne .Server.Mtu 0 -}}
 MTU = {{.Server.Mtu}}
 {{- end}}
+{{ if ne .Client.PreUp 0 -}}
+PreUp = {{.Client.PreUp}}
+{{- end}}
 [Peer]
 PublicKey = {{ .Server.PublicKey }}
 PresharedKey = {{ .Client.PresharedKey }}
