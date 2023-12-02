@@ -227,7 +227,7 @@ Please feel free to test and report any bugs.
 From the top level directory run
 
 ```
-$ go run main.go
+$ go run cmd/wg-gen-web/main.go
 ```
 
 ### Frontend
